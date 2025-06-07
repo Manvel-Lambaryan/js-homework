@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input and Display</title>
+</head>
+<body>
+
+  <input type="text" id="inputField" placeholder="Type your message..." oninput="displayMessage(this.value)">
+  <div id="messageDisplay"></div>
+
+      <script>
+    function displayMessage(value) {
+      document.getElementById('messageDisplay').innerHTML = value;
+    }
+  </script>
+
+</body>
+</html>

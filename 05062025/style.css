@@ -1,0 +1,76 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("360_F_206145642_ch7d799Dq38xZfRQjEAYRLaYS9jsmezF.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.calculator {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 20px white;
+    width: 320px;
+}
+
+.display {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.operator {
+    background-color: orange;
+    color: white;
+}
+
+button.equals {
+    background-color: #10b981;
+    color: white;
+    grid-column: span 2;
+}
+
+button.clear {
+    background-color: #ef4444;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}

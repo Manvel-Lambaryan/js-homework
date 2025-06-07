@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Text</title>
+</head>
+<body>
+  <p id="for-p">Hello World</p>
+  <button id="for-Delete">Click Here</button>
+
+  <script>
+    const forp = document.getElementById("for-p");
+    const forDelete = document.getElementById("for-Delete");
+
+    forDelete.addEventListener("click", function () {
+      if (forp.style.display === "none") {
+        forp.style.display = "block"; 
+      } else {
+        forp.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

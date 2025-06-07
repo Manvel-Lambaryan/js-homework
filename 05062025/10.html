@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Password</title>
+  <style>
+
+    body
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+    }
+
+    h2
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .password
+    {
+        background-color: whitesmoke;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        height: 25px;
+        overflow-x: auto;
+        margin-top: 50px;
+    }
+
+    label
+    {
+        margin-top: 50px;
+    }
+
+    .container
+    {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>შესვლა</h2>
+    <input type="password" class="password" id="password" placeholder="შეიყვანეთ პაროლი">
+    <br>
+    <input type="checkbox" id="togglePassword">
+    <label class="Show"   for="togglePassword">პაროლის ჩვენება</label>
+  </div>
+  <script>
+    const passwordInput = document.getElementById("password");
+    const toggleCheckbox = document.getElementById("togglePassword");
+
+    toggleCheckbox.addEventListener("change", function () {
+      passwordInput.type = this.checked ? "text" : "password";
+    });
+  </script>
+
+</body>
+</html>

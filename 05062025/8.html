@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Changer</title>
+  <style>
+    #color-box {
+      height: 320px;
+      background-color: lightgray;
+      justify-content: center;
+      align-items: center;
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      width: 320px;
+      margin: 0;
+      display: flex;
+      text-shadow: #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="color-box">Click me to change color!</div>
+
+  <script>
+    const box = document.getElementById('color-box');
+
+    function getRandomColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    box.addEventListener('click', function () {
+      box.style.backgroundColor = getRandomColor();
+    });
+  </script>
+
+</body>
+</html>
