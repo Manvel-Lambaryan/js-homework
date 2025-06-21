@@ -1,9 +1,9 @@
 
 var array = [1,2,3,4,5]
 
-function findIndexOf(array,searchElement,fromIndex)
+function findIndexOf(array,searchElement,fromIndex = 0)
 {
-    for(let i = fromIndex;i < array.length;i++)
+    for(let i = fromIndex;i < array.length + fromIndex;i++)
         {
             if(array[i] === searchElement)
                 {
@@ -13,9 +13,5 @@ function findIndexOf(array,searchElement,fromIndex)
         return -1;
 }
 
-var result = findIndexOf(array,2,0);
+var result = findIndexOf(array,2);
 console.log(result);
-
-
-
-
