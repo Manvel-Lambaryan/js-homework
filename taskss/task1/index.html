@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bank Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="bank-header">
+            <h1 id="bank-name"></h1>
+            <div class="total-balance-container">
+                <h2>Total Capital</h2>
+                <p id="total-balance">$0</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="left-panel">
+                <section class="controls-section">
+                    <h2>Actions</h2>
+                    <form id="add-account-form" class="form-card">
+                        <h3>Add New Account</h3>
+                        <input type="text" id="account-holder" placeholder="Account Holder Name" required>
+                        <input type="number" id="account-number" placeholder="Account Number" required>
+                        <input type="number" id="initial-balance" placeholder="Initial Balance" min="0" required>
+                        <button type="submit">Create Account</button>
+                    </form>
+                    
+                    <form id="transaction-form" class="form-card">
+                        <h3>Perform Transaction</h3>
+                        <input type="number" id="trans-account-number" placeholder="Account Number" required>
+                        <input type="number" id="trans-amount" placeholder="Amount" min="1" required>
+                        <div class="button-group">
+                            <button type="button" id="deposit-btn">Deposit</button>
+                            <button type="button" id="withdraw-btn">Withdraw</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="log-section">
+                    <h2>Activity Log</h2>
+                    <ul id="activity-log"></ul>
+                </section>
+            </div>
+
+            <section class="accounts-section">
+                <h2>Customer Accounts</h2>
+                <div id="accounts-container" class="accounts-container">
+                    <p>No accounts yet. Add one using the form.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="3.js"></script>
+</body>
+</html>
