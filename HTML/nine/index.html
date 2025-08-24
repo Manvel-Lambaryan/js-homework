@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Multimedia Showcase</h1>
+        <p>A collection of various media types to demonstrate modern web capabilities.</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="media-section">
+            <h2>Featured Video</h2>
+            <p>This is an HTML5 video element with controls and a poster image. It's designed to be responsive and work across different browsers. The video is hosted on this website, giving you full control over its playback.</p>
+            <div class="video-container">
+                <video controls poster="https://i.ibb.co/LdQ8GvD/video-poster.jpg" width="640" height="480">
+                    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+                    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mov-file.mov" type="video/mov">
+                    <p>Your browser doesn't support HTML5 video. Here is a <a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">link to the video</a> instead.</p>
+                </video>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h2>Background Music</h2>
+            <p>This is a simple HTML5 audio player. You can play, pause, and control the volume of the audio file directly in your browser without any external plugins.</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h2>Embedded YouTube Video</h2>
+            <p>Embedding a video from YouTube is a great way to display content without having to host the video file yourself. This uses an iframe to pull the content directly from YouTube's servers.</p>
+            <div class="iframe-container youtube-iframe">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h2>Embedded Google Map</h2>
+            <p>Embedding an interactive map allows users to explore a location directly on your page. This iframe from Google Maps provides a fully functional, zoomable, and draggable map.</p>
+            <div class="iframe-container map-iframe">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2185244585145!2d144.96305831553594!3d-37.81622354202271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218d6e30!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1628124805727!5m2!1sen!2sau" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Multimedia Showcase. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
